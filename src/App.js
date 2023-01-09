@@ -4,7 +4,9 @@ import GitHubReadme from "./components/github-readme/GitHubReadme";
 
 function App() {
   const [repoName, setRepoName] = useState("");
-  const [searchRepo, setSearchRepo] = useState("");
+  const [searchRepo, setSearchRepo] = useState(
+    "seapagan/react-github-readme-view"
+  );
 
   const apply = e => {
     e.preventDefault();

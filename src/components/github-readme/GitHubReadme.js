@@ -7,7 +7,7 @@ import { marked } from "marked";
 import "github-markdown-css/github-markdown-light.css";
 import "./GitHubReadme.scss";
 
-const GitHubReadme = ({ repo, branch, filename = "README.md" }) => {
+const GitHubReadme = ({ repo, branch = "main", filename = "README.md" }) => {
   const readmeURL = `https://raw.githubusercontent.com/${repo}/${branch}/${filename}`;
 
   const [readme, setReadme] = useState("");
