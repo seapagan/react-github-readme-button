@@ -22,7 +22,8 @@
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "gh-pages": "^4.0.0",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "serve": "^14.1.2"
   },
   "scripts": {
     "start": "BROWSER=none react-scripts start",
