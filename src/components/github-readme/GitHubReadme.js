@@ -25,7 +25,7 @@ const GitHubReadme = ({ repo, branch = "main", filename = "README.md" }) => {
   });
 
   useEffect(() => {
-    fetch(readmeURL)
+    fetch(readmeURL, { cache: "no-store" })
       .then(res => res.text())
       .then(data => {
         setReadme(data);
