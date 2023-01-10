@@ -5,21 +5,18 @@
 .inner-wrapper {
   position: absolute;
   z-index: 15;
-  top: 40px;
-  // left: 20px;
+  top: 20px;
   left: max(20px, calc((100vw - 980px) / 2));
   right: max(20px, calc((100vw - 980px) / 2));
-  bottom: 40px;
-  // margin: 40px;
+  bottom: 20px;
   max-width: 980px;
-
   min-width: 320px;
+  border-radius: 10px;
+  border: 1px solid hsla(0, 0, 0, 0.2);
 
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
-
-  border-radius: 10px;
 
   &::-webkit-scrollbar {
     width: 0;
