@@ -5,11 +5,13 @@
 .inner-wrapper {
   position: absolute;
   z-index: 15;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 40px;
+  top: 40px;
+  // left: 20px;
+  left: max(20px, calc((100vw - 980px) / 2));
+  right: max(20px, calc((100vw - 980px) / 2));
+  bottom: 40px;
+  // margin: 40px;
+  max-width: 980px;
 
   min-width: 320px;
 
@@ -27,6 +29,6 @@
 
 @media (max-width: 767px) {
   .inner-wrapper {
-    margin: 10px;
+    inset: 10px;
   }
 }
