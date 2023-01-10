@@ -37,9 +37,9 @@ const GitHubReadme = ({ repo, branch = "main", filename = "README.md" }) => {
   }, [readme]);
 
   return (
-    <>
+    <div className="inner-wrapper">
       <div className="markdown-body">{parse(DOMPurify.sanitize(markdown))}</div>
-    </>
+    </div>
   );
 };
 

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
 import GitHubReadme from "./components/github-readme/GitHubReadme";
+import ModalBG from "./components/Modal/ModalBG";
+
+import "./App.scss";
 
 function App() {
   const [repoName, setRepoName] = useState("");
-  const [searchRepo, setSearchRepo] = useState(
-    "seapagan/react-github-readme-view"
-  );
+  const [searchRepo, setSearchRepo] = useState("seapagan/fastapi-template");
 
   const apply = e => {
     e.preventDefault();
@@ -15,7 +16,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="app">
       <form>
         <input
           type="text"
@@ -28,7 +29,12 @@ function App() {
           Get the README
         </button>
       </form>
-      {searchRepo && <GitHubReadme repo={searchRepo} branch="main" />}
+      {searchRepo && (
+        <div>
+          <ModalBG />
+          <GitHubReadme repo={searchRepo} branch="main" />
+        </div>
+      )}
     </div>
   );
 }
