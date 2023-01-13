@@ -15,7 +15,7 @@ function App() {
   const apply = e => {
     e.preventDefault();
     if (!repoName) return;
-    setSearchRepo(repoName);
+    setSearchRepo(repoName.toLowerCase());
   };
 
   return (
