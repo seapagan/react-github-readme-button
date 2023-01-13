@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 
 import GitHubReadme from "./components/github-readme/GitHubReadme";
-import ModalOverlay from "./components/Modal/ModalOverlay";
 
 import "./App.scss";
 
 function App() {
   const [repoName, setRepoName] = useState("");
   const [searchRepo, setSearchRepo] = useState(
-    // "seapagan/react-github-readme-view"
+    "seapagan/react-github-readme-view"
     // "seapagan/fastapi-template"
-    ""
+    // ""
   );
 
   const apply = e => {
@@ -33,12 +32,7 @@ function App() {
           Get the README
         </button>
       </form>
-      {searchRepo && (
-        <section>
-          <ModalOverlay />
-          <GitHubReadme repo={searchRepo} branch="main" />
-        </section>
-      )}
+      {searchRepo && <GitHubReadme repo={searchRepo} branch="main" />}
     </div>
   );
 }

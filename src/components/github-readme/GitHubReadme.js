@@ -72,22 +72,25 @@ const GitHubReadme = ({ repo, branch = "main", filename = "README.md" }) => {
   }, [readme]);
 
   return (
-    <div className="modal-wrapper">
-      <article className="content-wrapper">
-        <header>
-          <a
-            href={"https://github.com/" + repo}
-            target="_blank"
-            rel="noreferrer">
-            {repo}
-          </a>
-          <span className="close-button">&#10060;</span>
-        </header>
-        <div className="markdown-body">
-          {parse(DOMPurify.sanitize(markdown))}
-        </div>
-      </article>
-    </div>
+    <>
+      <div className="overlay"></div>
+      <div className="modal-wrapper">
+        <article className="content-wrapper">
+          <header>
+            <a
+              href={"https://github.com/" + repo}
+              target="_blank"
+              rel="noreferrer">
+              {repo}
+            </a>
+            <span className="close-button">&#10060;</span>
+          </header>
+          <div className="markdown-body">
+            {parse(DOMPurify.sanitize(markdown))}
+          </div>
+        </article>
+      </div>
+    </>
   );
 };
 
