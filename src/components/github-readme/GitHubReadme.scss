@@ -1,5 +1,6 @@
 .markdown-body {
   position: relative;
+  // text-align: initial;
   padding: 20px;
   margin: 0.5em 0;
 
@@ -22,6 +23,7 @@
 .modal-wrapper {
   position: fixed;
   z-index: 15;
+  text-align: initial;
   top: 20px;
   left: max(20px, calc((100vw - 980px) / 2));
   right: max(20px, calc((100vw - 980px) / 2));
@@ -46,7 +48,8 @@
 
   header {
     font-size: 1.2em;
-    padding: 0.3em;
+    padding: 0.3em 0.6em;
+    text-align: left;
     background-color: rgb(122, 124, 255);
     a {
       text-decoration: none;

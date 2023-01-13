@@ -24,22 +24,22 @@ function App() {
         <input
           type="text"
           autoFocus={true}
-          placeholder="Enter a repository as username/repository"
+          placeholder="Enter username/repository"
           value={repoName}
           onChange={e => setRepoName(e.target.value)}
         />
         <button type="submit" onClick={apply}>
-          Set the README
+          Set
         </button>
       </form>
-      <p>Current Repository is set to {searchRepo}</p>
-      Click this to view:{" "}
-      <GitHubReadmeButton
-        className="button-style"
-        repo={searchRepo}
-        branch="main"
-      />{" "}
-      (ESC Closes the popup)
+      <p className="current-repo">
+        Repository: <span className="repo-name">{searchRepo}</span>
+      </p>
+      <div className="click-message">
+        Click this to{" "}
+        <GitHubReadmeButton className="button-style" repo={searchRepo} /> (ESC
+        Closes the popup)
+      </div>
     </div>
   );
 }
