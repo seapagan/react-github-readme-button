@@ -12,6 +12,7 @@ const GitHubReadme = ({ repo, branch = "main", filename = "README.md" }) => {
 
   const [readme, setReadme] = useState("");
   const [markdown, setMarkdown] = useState("");
+  const [isVisible, setIsVisible] = useState(false);
 
   marked.setOptions({
     highlight: function (code, lang) {
@@ -37,8 +38,21 @@ const GitHubReadme = ({ repo, branch = "main", filename = "README.md" }) => {
   }, [readme]);
 
   return (
-    <div className="inner-wrapper">
-      <div className="markdown-body">{parse(DOMPurify.sanitize(markdown))}</div>
+    <div className="modal-wrapper">
+      <article className="content-wrapper">
+        <header>
+          <a
+            href={"https://github.com/" + repo}
+            target="_blank"
+            rel="noreferrer">
+            {repo}
+          </a>
+          <span className="close-button">&#10060;</span>
+        </header>
+        <div className="markdown-body">
+          {parse(DOMPurify.sanitize(markdown))}
+        </div>
+      </article>
     </div>
   );
 };
