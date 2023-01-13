@@ -7,12 +7,16 @@ import { marked } from "marked";
 import "github-markdown-css/github-markdown-light.css";
 import "./GitHubReadme.scss";
 
-const GitHubReadme = ({ repo, branch = "main", filename = "README.md" }) => {
-  const readmeURL = `https://raw.githubusercontent.com/${repo}/${branch}/${filename}`;
+const GitHubReadme = ({
+  repo,
+  branch = "main",
+  filename: fileName = "README.md",
+  closeHandler,
+}) => {
+  const readmeURL = `https://raw.githubusercontent.com/${repo}/${branch}/${fileName}`;
 
   const [readme, setReadme] = useState("");
   const [markdown, setMarkdown] = useState("");
-  const [isVisible, setIsVisible] = useState(false);
 
   marked.setOptions({
     highlight: function (code, lang) {
@@ -26,6 +30,8 @@ const GitHubReadme = ({ repo, branch = "main", filename = "README.md" }) => {
   });
 
   useEffect(() => {
+    if (repo === null || repo === "") return;
+
     const markdownError = message => {
       return `# Error\n${message}`;
     };
@@ -65,11 +71,13 @@ const GitHubReadme = ({ repo, branch = "main", filename = "README.md" }) => {
           "while performing this operation"
         );
       });
-  }, [readmeURL]);
+  }, [readmeURL, repo]);
 
   useEffect(() => {
     setMarkdown(marked(readme || ""));
   }, [readme]);
+
+  if (repo === "" || !repo) return;
 
   return (
     <>
@@ -83,7 +91,9 @@ const GitHubReadme = ({ repo, branch = "main", filename = "README.md" }) => {
               rel="noreferrer">
               {repo}
             </a>
-            <span className="close-button">&#10060;</span>
+            <span className="close-button" onClick={closeHandler}>
+              &#10060;
+            </span>
           </header>
           <div className="markdown-body">
             {parse(DOMPurify.sanitize(markdown))}

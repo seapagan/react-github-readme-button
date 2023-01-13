@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import GitHubReadme from "./components/github-readme/GitHubReadme";
+import GitHubReadmeButton from "./components/GitHubReadmeButton/GitHubReadmeButton";
 
 import "./App.scss";
 
@@ -29,10 +29,17 @@ function App() {
           onChange={e => setRepoName(e.target.value)}
         />
         <button type="submit" onClick={apply}>
-          Get the README
+          Set the README
         </button>
       </form>
-      {searchRepo && <GitHubReadme repo={searchRepo} branch="main" />}
+      <p>Current Repository is set to {searchRepo}</p>
+      Click this to view:{" "}
+      <GitHubReadmeButton
+        className="button-style"
+        repo={searchRepo}
+        branch="main"
+      />{" "}
+      (ESC Closes the popup)
     </div>
   );
 }
