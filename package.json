@@ -1,6 +1,7 @@
 {
   "name": "react-github-readme-view",
   "version": "0.1.0",
+  "homepage": "https://seapagan.github.io/react-github-readme-view",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -28,7 +29,9 @@
     "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
