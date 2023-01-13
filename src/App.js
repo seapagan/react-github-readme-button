@@ -9,7 +9,8 @@ function App() {
   const [repoName, setRepoName] = useState("");
   const [searchRepo, setSearchRepo] = useState(
     // "seapagan/react-github-readme-view"
-    "seapagan/fastapi-template"
+    // "seapagan/fastapi-template"
+    ""
   );
 
   const apply = e => {

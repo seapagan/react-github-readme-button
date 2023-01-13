@@ -4,16 +4,14 @@ This is ongoing development for a component to display the README from a
 provided repository, which will be shown in a modal popup with all Markdown
 translated and using the correct GitHub styling.
 
-At the moment I'm still workinbg on the component so this is a test app that
+At the moment I'm still working on the component so this is a test app that
 allows you to enter any repository (in the form `username/repository`, without
 the GitHub url) and it will then properly display the README.
 
-## Current Limitations of the test web interface
+## Current Limitations of the TEST WEB interface
 
 - only fetches README.md
 - only fetches from the `main` branch.
-- no modal popup, just displayed to screen while I finalize the conversion and
-  formatting.
 
 The component has the ability to fetch from any branch and any name however. If
 these are not specified it defaults to the most common `README.md` and the
