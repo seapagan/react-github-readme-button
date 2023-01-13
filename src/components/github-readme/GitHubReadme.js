@@ -51,7 +51,7 @@ const GitHubReadme = ({
             case 404:
               message =
                 "Sorry, That repository __does not exist__ " +
-                `(${res.statusText})`;
+                `(${res.status})`;
               break;
             default:
               message =
