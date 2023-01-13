@@ -26,10 +26,44 @@ const GitHubReadme = ({ repo, branch = "main", filename = "README.md" }) => {
   });
 
   useEffect(() => {
+    const markdownError = message => {
+      return `# Error\n${message}`;
+    };
+
     fetch(readmeURL, { cache: "no-store" })
-      .then(res => res.text())
+      .then(res => {
+        if (res.ok) {
+          return res.text();
+        } else {
+          let message;
+          switch (res.status) {
+            case 400:
+              message =
+                "Sorry that repository name is invalid.\n" +
+                "It should be in the format `username/repository`.";
+              break;
+            case 404:
+              message =
+                "Sorry, That repository __does not exist__ " +
+                `(${res.statusText})`;
+              break;
+            default:
+              message =
+                "This operation failed with a status " +
+                `${res.status} __${res.statusText} __`;
+          }
+
+          return markdownError(message);
+        }
+      })
       .then(data => {
         setReadme(data);
+      })
+      .catch(res => {
+        return (
+          `Error ${res.status} (${res.statusText}) ` +
+          "while performing this operation"
+        );
       });
   }, [readmeURL]);
 
