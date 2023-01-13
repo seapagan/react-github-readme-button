@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-github-readme-view/static/css/main.b031b9d2.css",
+    "main.js": "/react-github-readme-view/static/js/main.86cf1243.js",
+    "index.html": "/react-github-readme-view/index.html",
+    "main.b031b9d2.css.map": "/react-github-readme-view/static/css/main.b031b9d2.css.map",
+    "main.86cf1243.js.map": "/react-github-readme-view/static/js/main.86cf1243.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b031b9d2.css",
+    "static/js/main.86cf1243.js"
+  ]
+}
