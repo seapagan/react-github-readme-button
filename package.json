@@ -1,7 +1,7 @@
 {
   "name": "react-github-readme-view",
   "version": "0.1.0",
-  "homepage": "https://seapagan.github.io/react-github-readme-view",
+  "homepage": "https://seapagan.github.io/react-github-readme-button",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
