@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import DOMPurify from "dompurify";
 import parse from "html-react-parser";
 import { marked } from "marked";
-import { markedEmoji } from "marked-emoji";
 
-import { emojis } from "./emojis";
+import { emojis } from "./emojiList";
+import { markedEmoji } from "./markedEmoji";
 
 import "github-markdown-css/github-markdown-light.css";
 import "./GitHubReadme.scss";
