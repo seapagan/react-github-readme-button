@@ -1,4 +1,4 @@
-# react-github-readme-preview
+# react-github-readme-button
 
 This is ongoing development for a component to display the README from a
 provided repository, which will be shown in a modal popup with all Markdown
@@ -10,7 +10,7 @@ the GitHub url) and it will then properly display the README.
 
 ## TEST Web app
 
-A test app is available at <https://seapagan.github.io/react-github-readme-view/>
+A test app is available at <https://seapagan.github.io/react-github-readme-button/>
 
 ### Limitations
 
