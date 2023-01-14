@@ -30,9 +30,4 @@ component. See the [TODO](TODO.md) for what is remaining.
 
 ## Current Bugs
 
-Currently the component has the following bugs/limitations
-
-- it will not properly display any images in the README. This will be worked on
-  shortly, it just needs all `img` tags to be prefixed with the GitHub raw path.
-- same applies to local relative file links
-- GitHub emojis will not be displayed, this will also be fixed shortly.
+See [BUGS.md](BUGS.md)
