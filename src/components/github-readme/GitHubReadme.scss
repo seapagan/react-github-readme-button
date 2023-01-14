@@ -1,6 +1,5 @@
 .markdown-body {
   position: relative;
-  // text-align: initial;
   padding: 20px;
   margin: 0.5em 0;
 
@@ -63,6 +62,11 @@
     top: 8px;
     vertical-align: middle;
     cursor: pointer;
+  }
+
+  .gh-emoji {
+    width: 1em;
+    vertical-align: middle;
   }
 }
 

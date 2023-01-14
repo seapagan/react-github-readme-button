@@ -4,6 +4,9 @@ import DOMPurify from "dompurify";
 import parse from "html-react-parser";
 import { marked } from "marked";
 
+import { emojis } from "./emojiList";
+import { markedEmoji } from "./markedEmoji";
+
 import "github-markdown-css/github-markdown-light.css";
 import "./GitHubReadme.scss";
 
@@ -27,7 +30,10 @@ const GitHubReadme = ({
     },
     gfm: true,
     langPrefix: "hljs language-",
+    baseUrl: `https://github.com/${repo}/raw/${branch}/`,
   });
+
+  marked.use(markedEmoji({ emojis, unicode: false }));
 
   useEffect(() => {
     if (repo === null || repo === "") return;
