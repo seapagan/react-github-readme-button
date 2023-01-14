@@ -48,7 +48,7 @@ function App() {
         <GitHubReadmeButton
           className="button-style"
           repo={searchRepo}
-          branch="fix-emojis"
+          // branch="fix-emojis"
         />{" "}
         (ESC Closes the popup)
       </div>

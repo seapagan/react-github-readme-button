@@ -8,7 +8,7 @@ At the moment I'm still working on the component so this is a test app that
 allows you to enter any repository (in the form `username/repository`, without
 the GitHub url) and it will then properly display the README.
 
-Test Emoji: :rocket:
+It even properly shows GitHub emojis like `:tada:` :tada:
 
 ## TEST Web app
 
