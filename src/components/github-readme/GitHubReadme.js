@@ -30,6 +30,7 @@ const GitHubReadme = ({
     },
     gfm: true,
     langPrefix: "hljs language-",
+    baseUrl: `https://github.com/${repo}/raw/${branch}/`,
   });
 
   marked.use(markedEmoji({ emojis, unicode: false }));
