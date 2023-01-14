@@ -8,6 +8,8 @@ At the moment I'm still working on the component so this is a test app that
 allows you to enter any repository (in the form `username/repository`, without
 the GitHub url) and it will then properly display the README.
 
+Test Emoji: :rocket:
+
 ## TEST Web app
 
 A test app is available at <https://seapagan.github.io/react-github-readme-button/>
