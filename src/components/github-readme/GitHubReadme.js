@@ -3,6 +3,9 @@ import React, { useEffect, useState } from "react";
 import DOMPurify from "dompurify";
 import parse from "html-react-parser";
 import { marked } from "marked";
+import { markedEmoji } from "marked-emoji";
+
+import { emojis } from "./emojis";
 
 import "github-markdown-css/github-markdown-light.css";
 import "./GitHubReadme.scss";
@@ -28,6 +31,8 @@ const GitHubReadme = ({
     gfm: true,
     langPrefix: "hljs language-",
   });
+
+  marked.use(markedEmoji({ emojis, unicode: false }));
 
   useEffect(() => {
     if (repo === null || repo === "") return;
