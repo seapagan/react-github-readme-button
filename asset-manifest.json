@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-github-readme-button/static/css/main.b031b9d2.css",
-    "main.js": "/react-github-readme-button/static/js/main.86cf1243.js",
+    "main.css": "/react-github-readme-button/static/css/main.4f027501.css",
+    "main.js": "/react-github-readme-button/static/js/main.bd2551f1.js",
     "index.html": "/react-github-readme-button/index.html",
-    "main.b031b9d2.css.map": "/react-github-readme-button/static/css/main.b031b9d2.css.map",
-    "main.86cf1243.js.map": "/react-github-readme-button/static/js/main.86cf1243.js.map"
+    "main.4f027501.css.map": "/react-github-readme-button/static/css/main.4f027501.css.map",
+    "main.bd2551f1.js.map": "/react-github-readme-button/static/js/main.bd2551f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.b031b9d2.css",
-    "static/js/main.86cf1243.js"
+    "static/css/main.4f027501.css",
+    "static/js/main.bd2551f1.js"
   ]
 }
