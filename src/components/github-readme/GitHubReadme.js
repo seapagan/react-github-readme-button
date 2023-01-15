@@ -92,7 +92,7 @@ const GitHubReadme = ({
         <article className="content-wrapper">
           <header>
             <a
-              href={"https://github.com/" + repo}
+              href={"https://github.com/" + encodeURI(repo)}
               target="_blank"
               rel="noreferrer">
               {repo}
