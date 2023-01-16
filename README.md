@@ -10,6 +10,24 @@ the GitHub url) and it will then properly display the README.
 
 It even properly shows GitHub emojis like `:tada:` :tada:
 
+## Installation
+
+Currently this is not available for npm/yarn install, working on it.
+
+## How to use
+
+```javascript
+import { GitHubReadmeButton } from react-github-readme-button
+
+<GitHubReadmeButton
+  repo={"seapagan/react-guithub-readme-button"} // required
+  branch="main" // optional, defaults to 'main'
+  fileName="README.md" // optional, defaults to 'README.md'
+  className="button-style" // optional but recommended, style the button
+  buttonText = "View README" // Button text, optional, defaults to 'View Readme'
+/>
+```
+
 ## TEST Web app
 
 A test app is available at <https://seapagan.github.io/react-github-readme-button/>
