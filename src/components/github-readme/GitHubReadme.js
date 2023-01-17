@@ -13,7 +13,7 @@ import "./GitHubReadme.scss";
 const GitHubReadme = ({
   repo,
   branch = "main",
-  filename: fileName = "README.md",
+  fileName = "README.md",
   closeHandler,
 }) => {
   const readmeURL = `https://raw.githubusercontent.com/${repo}/${branch}/${fileName}`;
