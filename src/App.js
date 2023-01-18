@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // eslint-disable-next-line
-import GitHubReadmeButton from "./components/GitHubReadmeButton/GitHubReadmeButton";
+import { GitHubReadmeButton } from "./components/GitHubReadmeButton/GitHubReadmeButton";
 
 import "./App.scss";
 
