@@ -90,7 +90,7 @@ const GitHubReadme = ({
       <div className="overlay"></div>
       <div className="modal-wrapper">
         <article className="content-wrapper">
-          <header>
+          <div className="modal-header">
             <a
               href={"https://github.com/" + encodeURI(repo)}
               target="_blank"
@@ -100,7 +100,7 @@ const GitHubReadme = ({
             <span className="close-button" onClick={closeHandler}>
               &#10060;
             </span>
-          </header>
+          </div>
           <div className="markdown-body">
             {parse(DOMPurify.sanitize(markdown))}
           </div>

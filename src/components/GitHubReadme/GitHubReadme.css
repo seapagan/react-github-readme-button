@@ -8,7 +8,7 @@
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
@@ -51,19 +51,19 @@
   vertical-align: middle;
 }
 
-header {
+.content-wrapper .modal-header {
   font-size: 1.2em;
   padding: 0.3em 0.6em;
   text-align: left;
   background-color: rgb(122, 124, 255);
 }
 
-header a {
+.content-wrapper .modal-header a {
   text-decoration: none;
   color: white;
 }
 
-header .close-button {
+.content-wrapper .modal-header .close-button {
   position: absolute;
   right: 8px;
   top: 8px;
