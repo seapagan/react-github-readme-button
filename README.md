@@ -76,7 +76,7 @@ React app on <http://localhost:3000>
 
 ### Hacking on the component
 
-All the actual component code is in the [components](components/) directory.
+All the actual component code is in the [components](src/components/) directory.
 
 ## TODO List
 
