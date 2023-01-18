@@ -12,7 +12,15 @@ It even properly shows GitHub emojis like `:tada:` :tada:
 
 ## Installation
 
-Currently this is not available for npm/yarn install, working on it.
+```console
+npm install react-github-readme-button
+```
+
+or
+
+```console
+yarn add react-github-readme-button
+```
 
 ## How to use
 
@@ -20,11 +28,11 @@ Currently this is not available for npm/yarn install, working on it.
 import { GitHubReadmeButton } from react-github-readme-button
 
 <GitHubReadmeButton
-  repo={"seapagan/react-guithub-readme-button"} // required
+  repo="seapagan/react-guithub-readme-button" // required
   branch="main" // optional, defaults to 'main'
   fileName="README.md" // optional, defaults to 'README.md'
   className="button-style" // optional but recommended, style the button
-  buttonText = "View README" // Button text, optional, defaults to 'View Readme'
+  buttonText = "View README" // Button text, optional, defaults to 'View README'
 />
 ```
 
@@ -32,7 +40,7 @@ import { GitHubReadmeButton } from react-github-readme-button
 
 A test app is available at <https://seapagan.github.io/react-github-readme-button/>
 
-### Limitations
+### Test app Limitations
 
 - only fetches README.md
 - only fetches from the `main` branch.

@@ -4,7 +4,7 @@ import GithubReadme from "../github-readme/GitHubReadme";
 
 import "./GitHubReadmeButton.scss";
 
-const GitHubReadmeButton = ({
+export const GitHubReadmeButton = ({
   repo,
   branch = "main",
   fileName = "README.md",
@@ -50,5 +50,3 @@ const GitHubReadmeButton = ({
     </div>
   );
 };
-
-export default GitHubReadmeButton;
