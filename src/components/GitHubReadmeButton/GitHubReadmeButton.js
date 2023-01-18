@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import GithubReadme from "../github-readme/GitHubReadme";
+import GithubReadme from "../GitHubReadme/GitHubReadme";
 
 import "./GitHubReadmeButton.css";
 
