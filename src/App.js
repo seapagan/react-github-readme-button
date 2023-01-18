@@ -45,12 +45,8 @@ function App() {
       </p>
       <div className="click-message">
         Click this to{" "}
-        <GitHubReadmeButton
-          className="button-style"
-          repo={searchRepo}
-          // branch="fix-emojis"
-        />{" "}
-        (ESC Closes the popup)
+        <GitHubReadmeButton className="button-style" repo={searchRepo} /> (ESC
+        Closes the popup)
       </div>
     </div>
   );
