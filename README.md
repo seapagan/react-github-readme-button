@@ -1,12 +1,18 @@
-# react-github-readme-button
+# react-github-readme-button <!-- omit in toc -->
 
-This is ongoing development for a component to display the README from a
-provided repository, which will be shown in a modal popup with all Markdown
-translated and using the correct GitHub styling.
+A React component to display the README from a provided repository, which will
+be shown in a modal popup with all Markdown translated and using the correct
+GitHub styling.
 
-At the moment I'm still working on the component so this is a test app that
-allows you to enter any repository (in the form `username/repository`, without
-the GitHub url) and it will then properly display the README.
+- [Installation](#installation)
+- [How to use](#how-to-use)
+- [Test Web app](#test-web-app)
+  - [Test app Limitations](#test-app-limitations)
+- [Contributing](#contributing)
+  - [Using the test Application](#using-the-test-application)
+  - [Hacking on the component](#hacking-on-the-component)
+- [TODO List](#todo-list)
+- [Current Bugs](#current-bugs)
 
 It even properly shows GitHub emojis like `:tada:` :tada:
 
@@ -36,9 +42,12 @@ import { GitHubReadmeButton } from react-github-readme-button
 />
 ```
 
-## TEST Web app
+## Test Web app
 
-A test app is available at <https://seapagan.github.io/react-github-readme-button/>
+A test app is available at
+<https://seapagan.github.io/react-github-readme-button/> or from a local clone
+of the repository on <localhost:3000>. This uses the  local code of the
+component, so is good to use during development.
 
 ### Test app Limitations
 
@@ -49,10 +58,29 @@ The component has the ability to fetch from any branch and any name however. If
 these are not specified it defaults to the most common `README.md` and the
 `main` branch
 
+## Contributing
+
+Contributions to this project, especially Bug Reports or fixes are very welcome.
+
+1. Fork it
+2. Install the development dependencies (`npm install` or `yarn install`)
+3. Create your feature branch (`git checkout -b my-new-feature`)
+4. Commit your changes (`git commit -am 'Add some feature'`)
+5. Push to the branch (`git push origin my-new-feature`)
+6. Create a new Pull Request
+
+### Using the test Application
+
+Run `npm start` or `yarn start` from the project root which will serve up a test
+React app on <localhost:3000>
+
+### Hacking on the component
+
+All the actual component code is in the [components](components/) directory.
+
 ## TODO List
 
-This is a work in progress which will eventually result in an installable React
-component. See the [TODO](TODO.md) for what is remaining.
+See the [TODO](TODO.md) list for future plans.
 
 ## Current Bugs
 
