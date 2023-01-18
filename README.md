@@ -1,11 +1,10 @@
 # react-github-readme-button <!-- omit in toc -->
 
+A React component to display the README from a specific repository in a modal
+popup with all Markdown translated and using the correct GitHub styling.
+
 [![NPM Version](https://shields.io/npm/v/react-github-readme-button)](https://www.npmjs.com/package/react-github-readme-button)
 [![CodeQL](https://github.com/seapagan/react-github-readme-button/actions/workflows/codeql.yml/badge.svg)](https://github.com/seapagan/react-github-readme-button/actions/workflows/codeql.yml)
-
-A React component to display the README from a provided repository, which will
-be shown in a modal popup with all Markdown translated and using the correct
-GitHub styling.
 
 - [Installation](#installation)
 - [How to use](#how-to-use)
