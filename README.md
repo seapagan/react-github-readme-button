@@ -46,7 +46,7 @@ import { GitHubReadmeButton } from react-github-readme-button
 
 A test app is available at
 <https://seapagan.github.io/react-github-readme-button/> or from a local clone
-of the repository on <localhost:3000>. This uses the  local code of the
+of the repository on <http://localhost:3000>. This uses the  local code of the
 component, so is good to use during development.
 
 ### Test app Limitations
@@ -72,7 +72,7 @@ Contributions to this project, especially Bug Reports or fixes are very welcome.
 ### Using the test Application
 
 Run `npm start` or `yarn start` from the project root which will serve up a test
-React app on <localhost:3000>
+React app on <http://localhost:3000>
 
 ### Hacking on the component
 
