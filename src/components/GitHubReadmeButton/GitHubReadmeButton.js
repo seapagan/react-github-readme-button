@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import GithubReadme from "../github-readme/GitHubReadme";
 
-import "./GitHubReadmeButton.scss";
+import "./GitHubReadmeButton.css";
 
 export const GitHubReadmeButton = ({
   repo,

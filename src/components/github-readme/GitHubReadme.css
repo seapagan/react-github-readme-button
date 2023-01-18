@@ -44,30 +44,31 @@
   display: flex;
   height: 100%;
   flex-direction: column;
+}
 
-  header {
-    font-size: 1.2em;
-    padding: 0.3em 0.6em;
-    text-align: left;
-    background-color: rgb(122, 124, 255);
-    a {
-      text-decoration: none;
-      color: white;
-    }
-  }
+.content-wrapper .gh-emoji {
+  width: 1em;
+  vertical-align: middle;
+}
 
-  .close-button {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    vertical-align: middle;
-    cursor: pointer;
-  }
+header {
+  font-size: 1.2em;
+  padding: 0.3em 0.6em;
+  text-align: left;
+  background-color: rgb(122, 124, 255);
+}
 
-  .gh-emoji {
-    width: 1em;
-    vertical-align: middle;
-  }
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header .close-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {

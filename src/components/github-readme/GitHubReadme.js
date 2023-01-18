@@ -8,7 +8,7 @@ import { emojis } from "./emojiList";
 import { markedEmoji } from "./markedEmoji";
 
 import "github-markdown-css/github-markdown-light.css";
-import "./GitHubReadme.scss";
+import "./GitHubReadme.css";
 
 const GitHubReadme = ({
   repo,
