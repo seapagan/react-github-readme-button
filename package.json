@@ -1,6 +1,6 @@
 {
   "name": "react-github-readme-button",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://seapagan.github.io/react-github-readme-button",
   "private": false,
   "license": "MIT",
@@ -15,6 +15,10 @@
       "@babel/preset-react"
     ]
   },
+  "main": "dist/GitHubReadmeButton/GitHubReadmeButton.js",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "dompurify": "^2.4.3",
     "github-markdown-css": "^5.1.0",
@@ -28,7 +32,6 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^14.4.3",
-    "react-scripts": "5.0.1",
     "eslint": "^8.32.0",
     "eslint-plugin-import": "^2.27.4",
     "eslint-plugin-react": "^7.32.0",
