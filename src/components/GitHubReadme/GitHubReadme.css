@@ -4,6 +4,7 @@
   margin: 0.5em 0;
 
   overflow-y: scroll;
+  overscroll-behavior: contain;
   flex: 1;
 }
 
