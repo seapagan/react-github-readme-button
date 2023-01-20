@@ -5,5 +5,6 @@
   <https://github.com/{user}/{repo}/raw/main/{current-img-src}>~~
 - ~~same applies to local relative file links~~
 - ~~GitHub emojis will not be displayed, this will also be fixed shortly.~~
-- ~~package needs `sass` package installed by end developer, fix this by compiling
-  all SCSS to CSS at build time.~~
+- ~~package needs `sass` package installed by end developer, fix this by
+  compiling all SCSS to CSS at build time.~~ [FIXED] by switching to CSS as it's
+  trivial code.
