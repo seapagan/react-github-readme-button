@@ -19,7 +19,22 @@ popup with all Markdown translated and using the correct GitHub styling.
 It even properly shows GitHub emojis like `:tada:` :tada:
 
 Relative file links ([README.md](README.md)) and folders ([src/](src)) should
-work properly too.
+work properly too, though files and folders should NOT have a preceeding
+forward-slash:
+
+**Wrong**:
+
+```markdown
+[file.py](/file.py)
+[folder](/folder)
+```
+
+**Correct**:
+
+```markdown
+[file.py](file.py)
+[folder](folder)
+```
 
 ## Installation
 
