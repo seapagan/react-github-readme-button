@@ -30,9 +30,23 @@ const GitHubReadme = ({
     },
     gfm: true,
     langPrefix: "hljs language-",
-    baseUrl: `https://github.com/${repo}/raw/${branch}/`,
+    baseUrl: `https://github.com/${repo}/blob/${branch}/`,
   });
 
+  const renderer = {
+    // we override the image renderer for local images as they require a
+    // different base url than eg local links.
+    image(href, title, text) {
+      // don't mangle external images
+      if (href.includes("http")) return false;
+
+      return `
+        <img src="https://github.com/${repo}/raw/${branch}/${href}" />
+      `;
+    },
+  };
+
+  marked.use({ renderer });
   marked.use(markedEmoji({ emojis, unicode: false }));
 
   useEffect(() => {

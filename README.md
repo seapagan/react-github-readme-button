@@ -18,6 +18,9 @@ popup with all Markdown translated and using the correct GitHub styling.
 
 It even properly shows GitHub emojis like `:tada:` :tada:
 
+Relative file links ([README.md](README.md)) and folders ([src/](src)) should
+work properly too.
+
 ## Installation
 
 ```console
