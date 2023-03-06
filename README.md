@@ -54,7 +54,7 @@ yarn add react-github-readme-button
 import { GitHubReadmeButton } from react-github-readme-button
 
 <GitHubReadmeButton
-  repo="seapagan/react-guithub-readme-button" // required
+  repo="seapagan/react-github-readme-button" // required
   branch="main" // optional, defaults to 'main'
   fileName="README.md" // optional, defaults to 'README.md'
   className="button-style" // optional but recommended, style the button
