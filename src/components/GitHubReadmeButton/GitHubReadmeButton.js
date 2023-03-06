@@ -38,8 +38,12 @@ export const GitHubReadmeButton = ({
   }, []);
 
   return (
-    <div className={`github-button ${otherProps.className}`}>
-      <div onClick={showReadme}>{buttonText}</div>
+    <>
+      <button
+        className={`github-button ${otherProps.className}`}
+        onClick={showReadme}>
+        {buttonText}
+      </button>
       {isVisible && (
         <GithubReadme
           repo={repo}
@@ -47,6 +51,6 @@ export const GitHubReadmeButton = ({
           filename={fileName}
           closeHandler={closeHandler}></GithubReadme>
       )}
-    </div>
+    </>
   );
 };
