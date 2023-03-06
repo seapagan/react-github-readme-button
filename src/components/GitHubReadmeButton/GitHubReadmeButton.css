@@ -1,4 +1,5 @@
 .github-button {
+  all: unset;
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
@@ -8,4 +9,8 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   cursor: pointer;
+}
+
+.github-button:focus {
+  border-bottom: 1px dashed green;
 }
