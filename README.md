@@ -91,7 +91,8 @@ Contributions to this project, especially Bug Reports or fixes are very welcome.
 
 ### Using the test Application
 
-Run `npm start` or `yarn start` from the project root which will serve up a test
+Run `npm install` or `yarn install` to install all required dependencies.
+Run`npm start` or `yarn start` from the project root which will serve up a test
 React app on <http://localhost:3000>
 
 ### Hacking on the component
