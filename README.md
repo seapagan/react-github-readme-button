@@ -8,8 +8,9 @@ popup with all Markdown translated and using the correct GitHub styling.
 
 - [Installation](#installation)
 - [How to use](#how-to-use)
-- [Test Web app](#test-web-app)
-  - [Test app Limitations](#test-app-limitations)
+  - [Pre / Post Hooks](#pre--post-hooks)
+- [Example Web app](#example-web-app)
+  - [Example app Limitations](#example-app-limitations)
 - [Contributing](#contributing)
   - [Using the test Application](#using-the-test-application)
   - [Hacking on the component](#hacking-on-the-component)
@@ -59,17 +60,26 @@ import { GitHubReadmeButton } from react-github-readme-button
   fileName="README.md" // optional, defaults to 'README.md'
   className="button-style" // optional but recommended, style the button
   buttonText = "View README" // Button text, optional, defaults to 'View README'
+  preDisplayHook={handlePreDisplayHook} // See below
+  postDisplayHook={handlePostDisplayHook} // See below
 />
 ```
 
-## Test Web app
+### Pre / Post Hooks
 
-A test app is available at
+The 2 hooks `preDisplayHook` and `postDisplayHook` are called just before the
+README is rendered and just after it is removed respectively. These were
+primarily designed to pause timers used in a Carousel system but can do any
+processing you need. See the Example Web app for a usage example.
+
+## Example Web app
+
+An example app is available at
 <https://seapagan.github.io/react-github-readme-button/> or from a local clone
 of the repository on <http://localhost:3000>. This uses the  local code of the
 component, so is good to use during development.
 
-### Test app Limitations
+### Example app Limitations
 
 - only fetches README.md
 - only fetches from the `main` branch.

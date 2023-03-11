@@ -14,6 +14,7 @@ export const GitHubReadmeButton = ({
   const [isVisible, setIsVisible] = useState(false);
 
   const showReadme = () => {
+    otherProps.preDisplayHook && otherProps.preDisplayHook();
     setIsVisible(true);
   };
 
@@ -22,12 +23,14 @@ export const GitHubReadmeButton = ({
   // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
   function closeHandler() {
     setIsVisible(false);
+    otherProps.postDisplayHook && otherProps.postDisplayHook();
   }
 
   useEffect(() => {
     const handleEsc = e => {
       if (e.keyCode === 27) {
         setIsVisible(false);
+        otherProps.postDisplayHook && otherProps.postDisplayHook();
       }
     };
     window.addEventListener("keydown", handleEsc);
@@ -35,7 +38,7 @@ export const GitHubReadmeButton = ({
     return () => {
       window.removeEventListener("keydown", handleEsc);
     };
-  }, []);
+  }, [otherProps]);
 
   return (
     <>
