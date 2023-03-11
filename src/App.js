@@ -19,6 +19,14 @@ function App() {
     setSearchRepo(repoName.toLowerCase());
   };
 
+  const handlePreDisplayHook = e => {
+    console.log("Pre-display Hook Fired!!");
+  };
+
+  const handlePostDisplayHook = e => {
+    console.log("Post-display Hook Fired!!");
+  };
+
   return (
     <div className="app">
       <form autoComplete="off">
@@ -45,8 +53,13 @@ function App() {
       </p>
       <div className="click-message">
         Click this to{" "}
-        <GitHubReadmeButton className="button-style" repo={searchRepo} /> (ESC
-        Closes the popup)
+        <GitHubReadmeButton
+          className="button-style"
+          repo={searchRepo}
+          preDisplayHook={handlePreDisplayHook}
+          postDisplayHook={handlePostDisplayHook}
+        />{" "}
+        (ESC Closes the popup)
       </div>
     </div>
   );
