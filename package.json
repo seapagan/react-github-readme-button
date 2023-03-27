@@ -23,7 +23,7 @@
     "dompurify": "^3.0.1",
     "github-markdown-css": "^5.2.0",
     "highlight.js": "^11.7.0",
-    "html-react-parser": "^3.0.12",
+    "html-react-parser": "^3.0.15",
     "marked": "^4.2.5"
   },
   "devDependencies": {
