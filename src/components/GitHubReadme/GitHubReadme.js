@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import DOMPurify from "dompurify";
+import hljs from "highlight.js";
 import parse from "html-react-parser";
 import { marked } from "marked";
 
@@ -23,7 +24,6 @@ const GitHubReadme = ({
 
   marked.setOptions({
     highlight: function (code, lang) {
-      const hljs = require("highlight.js");
       const language = hljs.getLanguage(lang) ? lang : "plaintext";
 
       return hljs.highlight(code, { language }).value;
