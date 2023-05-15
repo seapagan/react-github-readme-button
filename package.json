@@ -24,7 +24,7 @@
     "github-markdown-css": "^5.2.0",
     "highlight.js": "^11.7.0",
     "html-react-parser": "^3.0.12",
-    "marked": "^4.2.5"
+    "marked": "^5.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
