@@ -27,7 +27,7 @@
     "marked": "^5.0.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.21.0",
+    "@babel/cli": "^7.22.5",
     "@babel/preset-react": "^7.22.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^14.0.0",
