@@ -1,8 +1,7 @@
 {
   "name": "react-github-readme-button",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "homepage": "https://seapagan.github.io/react-github-readme-button",
-  "private": false,
   "license": "MIT",
   "author": "Grant Ramsay <seapagan@gmail.com>",
   "repository": {
@@ -28,7 +27,9 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.5",
     "@babel/preset-react": "^7.22.5",
+    "@testing-library/dom": "^9.3.3",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.5.1",
@@ -73,5 +74,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "packageManager": "yarn@4.0.2"
 }
