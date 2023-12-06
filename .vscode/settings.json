@@ -1,7 +1,7 @@
 {
   "css.customData": ["./.vscode/custom.css-data.json"],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -16,7 +16,6 @@
   "emmet.triggerExpansionOnTab": true,
   "eslint.codeActionsOnSave.mode": "problems",
   "eslint.format.enable": true,
-  "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
