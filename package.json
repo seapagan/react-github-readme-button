@@ -20,7 +20,7 @@
     "dist"
   ],
   "dependencies": {
-    "dompurify": "^3.0.5",
+    "dompurify": "^3.0.6",
     "github-markdown-css": "^5.2.0",
     "highlight.js": "^11.9.0",
     "html-react-parser": "^4.2.7",
